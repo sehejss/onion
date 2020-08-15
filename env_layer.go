@@ -50,3 +50,17 @@ func NewEnvLayerPrefix(separator string, prefix string) Layer {
 
 	return NewMapLayer(data)
 }
+
+func NewEnvLayerPrefixWithoutSplit(separator string, prefix string) Layer {
+	var data map[string]interface{}
+	pf := strings.ToUpper(prefix) + separator
+	for _, env := range os.Environ() {
+		if strings.HasPrefix(env, pf) {
+			k := strings.Trim(strings.Split(env, "=")[0], "\t\n ")
+			ck := strings.ToLower(strings.TrimPrefix(k, pf))
+			data = buildMap(data, os.Getenv(k), ck)
+		}
+	}
+
+	return NewMapLayer(data)
+}

@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/fsnotify/fsnotify"
-	"github.com/goraz/onion"
+	"github.com/sehejss/onion"
 )
 
 type streamReload interface {

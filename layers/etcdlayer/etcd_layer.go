@@ -8,7 +8,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/goraz/onion"
+	"github.com/sehejss/onion"
 	goetcd "go.etcd.io/etcd/client"
 )
 

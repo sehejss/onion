@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"io"
 
-	"github.com/goraz/onion"
+	"github.com/sehejss/onion"
 	"github.com/mitchellh/mapstructure"
 )
 

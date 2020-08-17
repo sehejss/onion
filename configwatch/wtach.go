@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/goraz/onion"
+	"github.com/sehejss/onion"
 )
 
 var (

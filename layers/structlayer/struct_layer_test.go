@@ -3,7 +3,7 @@ package structlayer
 import (
 	"testing"
 
-	"github.com/goraz/onion"
+	"github.com/sehejss/onion"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

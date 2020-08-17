@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"sort"
 
-	"github.com/goraz/onion"
+	"github.com/sehejss/onion"
 	"github.com/skarademir/naturalsort"
 )
 

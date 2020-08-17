@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/goraz/onion"
+	"github.com/sehejss/onion"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

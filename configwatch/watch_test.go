@@ -10,7 +10,7 @@ import (
 
 	. "github.com/smartystreets/goconvey/convey"
 
-	"github.com/goraz/onion"
+	"github.com/sehejss/onion"
 )
 
 type streamReload interface {

@@ -19,7 +19,7 @@ func TestNewEnvLayer(t *testing.T) {
 		o2 := New(l2)
 		So(o2.GetInt("test.sep"), ShouldEqual, 1)
 
-		l3 := NewEnvLayerPrefixWithoutSplit("_", "key")
+		l3 := NewFlatEnvLayerPrefix("_", "key")
 		o3 := New(l3)
 		So(o3.GetInt("test_sep"), ShouldEqual, 1)
 	})

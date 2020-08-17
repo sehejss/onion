@@ -51,7 +51,7 @@ func NewEnvLayerPrefix(separator string, prefix string) Layer {
 	return NewMapLayer(data)
 }
 
-func NewEnvLayerPrefixWithoutSplit(separator string, prefix string) Layer {
+func NewFlatEnvLayerPrefix(separator string, prefix string) Layer {
 	var data map[string]interface{}
 	pf := strings.ToUpper(prefix) + separator
 	for _, env := range os.Environ() {

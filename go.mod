@@ -1,4 +1,4 @@
-module github.com/goraz/onion
+module github.com/sehejss/onion
 
 go 1.14
 
